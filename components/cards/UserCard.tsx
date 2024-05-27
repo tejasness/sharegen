@@ -22,12 +22,16 @@ function UserCard({ id, name, username, imgUrl, personType }: Props) {
     <article className='user-card'>
       <div className='user-card_avatar'>
         <div className='relative h-12 w-12'>
-          <Image
-            src={imgUrl}
-            alt='user_logo'
-            fill
-            className='rounded-full object-cover'
-          />
+        {imgUrl ? (
+            <Image
+              src={imgUrl}
+              alt='user_logo'
+              fill
+              className='rounded-full object-cover'
+            />
+          ) : (
+            <div className='rounded-full object-cover bg-gray-200 h-12 w-12' />
+          )}
         </div>
 
         <div className='flex-1 text-ellipsis'>
