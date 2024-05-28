@@ -1,6 +1,7 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import { fetchUser } from "@/lib/actions/user.actions";
+import GeminiChat from "@/components/cards/chat";
 
 async function Page() {
   const user = await currentUser();
@@ -12,7 +13,7 @@ async function Page() {
 
   return (
     <>
-
+      <GeminiChat />
     </>
   );
 }
