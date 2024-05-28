@@ -64,7 +64,7 @@ function PostThread({ userId }: Props) {
                 Content
               </FormLabel>
               <FormControl className='no-focus border border-dark-4 bg-dark-3 text-light-1'>
-                <Textarea rows={15} {...field} />
+                <Textarea rows={5} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
