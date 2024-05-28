@@ -52,7 +52,7 @@ function PostThread({ userId }: Props) {
   return (
     <Form {...form}>
       <form
-        className='mt-10 flex flex-col justify-start gap-10'
+        className='flex flex-col justify-start gap-10'
         onSubmit={form.handleSubmit(onSubmit)}
       >
         <FormField
